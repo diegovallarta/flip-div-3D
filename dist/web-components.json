@@ -1,0 +1,31 @@
+{
+  "tags": [
+    {
+      "label": "card-item",
+      "description": "",
+      "attributes": [
+        {
+          "label": "class-names",
+          "description": "",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "flip-div",
+      "description": "",
+      "attributes": [
+        {
+          "label": "height",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "width",
+          "description": "",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

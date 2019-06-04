@@ -1,0 +1,20 @@
+.front-card {
+	top: 0;
+    left: 0;    
+    z-index: 2;
+	width:  -webkit-fill-available;
+    height: -webkit-fill-available;
+	backface-visibility: hidden;
+	position: absolute;
+	transform: rotateY(0deg);
+}
+
+.back-card {
+	top: 0;
+	left: 0;
+	width:  -webkit-fill-available;
+    height: -webkit-fill-available;
+    transform: rotateY(180deg);
+	backface-visibility: hidden;
+	position: absolute;
+}

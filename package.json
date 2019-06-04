@@ -18,14 +18,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "~0.15.1",
+    "@stencil/core": "~0.18.1",
     "@stencil/sass": "^0.1.1",
     "@types/jest": "23.3.9",
     "jest": "23.6.0",
-    "jest-cli": "23.6.0",
-    "serve": "^10.0.2"
+    "jest-cli": "23.6.0"
   },
-  "keywords": ["flip-div","css 3d","StencilJs"],
+  "keywords": [
+    "flip-div",
+    "css 3d",
+    "StencilJs"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rafaelboschini/flip-div-3D.git"

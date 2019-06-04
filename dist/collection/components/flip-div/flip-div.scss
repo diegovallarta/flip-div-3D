@@ -1,0 +1,14 @@
+.flip-div-container {
+	perspective: 1000px;	
+
+	&:hover .flip-div-perspective{
+		will-change: transform; //improve performance
+		transform: rotateY(180deg);
+	}
+
+	.flip-div-perspective {
+		transition: 0.5s;
+		transform-style: preserve-3d;
+		position: relative;			
+	}
+}
