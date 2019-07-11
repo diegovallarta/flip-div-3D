@@ -6,7 +6,8 @@
   height: -webkit-fill-available;
   backface-visibility: hidden;
   position: absolute;
-  transform: rotateY(0deg); }
+  transform: rotateY(0deg);
+}
 
 .back-card {
   top: 0;
@@ -15,4 +16,5 @@
   height: -webkit-fill-available;
   transform: rotateY(180deg);
   backface-visibility: hidden;
-  position: absolute; }
+  position: absolute;
+}

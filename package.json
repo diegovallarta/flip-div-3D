@@ -2,8 +2,12 @@
   "name": "flip-div",
   "version": "1.0.0",
   "description": "Flip-div 3D Component",
-  "module": "dist/esm/index.js",
+  "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "jsnext:main": "dist/esm/index.mjs",
+  "unpkg": "dist/ionic.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
@@ -18,8 +22,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "~0.18.1",
-    "@stencil/sass": "^0.1.1",
+    "@stencil/core": "~1.1.6",
+    "@stencil/sass": "^1.0.1",
     "@types/jest": "23.3.9",
     "jest": "23.6.0",
     "jest-cli": "23.6.0"

@@ -1,77 +1,14 @@
 {
-  "components": [
-    {
-      "tag": "card-item",
-      "dependencies": [],
-      "componentClass": "CardItem",
-      "componentPath": "components/card-item/card-item.js",
-      "styles": {
-        "$": {
-          "stylePaths": [
-            "components/card-item/card-item.scss"
-          ]
-        }
-      },
-      "props": [
-        {
-          "name": "classNames",
-          "type": "String",
-          "attr": "class-names"
-        }
-      ],
-      "hostElement": {
-        "name": "el"
-      }
-    },
-    {
-      "tag": "flip-div",
-      "dependencies": [],
-      "componentClass": "FlipCard",
-      "componentPath": "components/flip-div/flip-div.js",
-      "styles": {
-        "$": {
-          "stylePaths": [
-            "components/flip-div/flip-div.scss"
-          ]
-        }
-      },
-      "props": [
-        {
-          "name": "height",
-          "type": "String",
-          "attr": "height"
-        },
-        {
-          "name": "width",
-          "type": "String",
-          "attr": "width"
-        }
-      ],
-      "listeners": [
-        {
-          "event": "click",
-          "method": "clickHandle",
-          "passive": false,
-          "capture": false
-        }
-      ],
-      "hostElement": {
-        "name": "el"
-      },
-      "events": [
-        {
-          "event": "clicked"
-        }
-      ],
-      "shadow": true
-    }
+  "entries": [
+    "components/card-item/card-item.js",
+    "components/flip-div/flip-div.js"
   ],
-  "collections": [],
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.18.1",
-    "typescriptVersion": "3.3.3"
+    "version": "1.1.6",
+    "typescriptVersion": "3.5.2"
   },
+  "collections": [],
   "bundles": [
     {
       "components": [

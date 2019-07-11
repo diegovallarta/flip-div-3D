@@ -1,0 +1,1 @@
+System.register(["./p-73cc1e6f.system.js"],function(){"use strict";var e,s;return{setters:[function(t){e=t.p;s=t.b}],execute:function(){e().then(function(e){return s([["p-kfsrapzf.system",[[4,"card-item",{classNames:[1,"class-names"]}],[1,"flip-div",{height:[1],width:[1]},[[0,"click","clickHandle"]]]]]],{resourcesUrl:e})})}}});

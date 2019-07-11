@@ -1,0 +1,1 @@
+import{p as s,b as i}from"./p-1c722005.js";s().then(s=>i([["p-udfpmiri",[[4,"card-item",{classNames:[1,"class-names"]}],[1,"flip-div",{height:[1],width:[1]},[[0,"click","clickHandle"]]]]]],{resourcesUrl:s}));

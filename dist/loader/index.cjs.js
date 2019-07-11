@@ -1,1 +1,3 @@
-module.exports = require('../cjs/es5/flipdiv3d.define.js');
+
+module.exports = require('../cjs/loader.cjs.js');
+module.exports.applyPolyfills = function() { return Promise.resolve() };

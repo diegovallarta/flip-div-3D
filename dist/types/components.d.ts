@@ -5,41 +5,20 @@
  */
 
 
-import './stencil.core';
-
-
+import { HTMLStencilElement, JSXBase } from './stencil.core';
 
 
 export namespace Components {
-
   interface CardItem {
     'classNames': string;
   }
-  interface CardItemAttributes extends StencilHTMLAttributes {
-    'classNames'?: string;
-  }
-
   interface FlipDiv {
     'height': string;
     'width': string;
   }
-  interface FlipDivAttributes extends StencilHTMLAttributes {
-    'height'?: string;
-    'onClicked'?: (event: CustomEvent) => void;
-    'width'?: string;
-  }
 }
 
 declare global {
-  interface StencilElementInterfaces {
-    'CardItem': Components.CardItem;
-    'FlipDiv': Components.FlipDiv;
-  }
-
-  interface StencilIntrinsicElements {
-    'card-item': Components.CardItemAttributes;
-    'flip-div': Components.FlipDivAttributes;
-  }
 
 
   interface HTMLCardItemElement extends Components.CardItem, HTMLStencilElement {}
@@ -53,16 +32,35 @@ declare global {
     prototype: HTMLFlipDivElement;
     new (): HTMLFlipDivElement;
   };
-
   interface HTMLElementTagNameMap {
-    'card-item': HTMLCardItemElement
-    'flip-div': HTMLFlipDivElement
-  }
-
-  interface ElementTagNameMap {
     'card-item': HTMLCardItemElement;
     'flip-div': HTMLFlipDivElement;
   }
-
-
 }
+
+declare namespace LocalJSX {
+  interface CardItem extends JSXBase.HTMLAttributes<HTMLCardItemElement> {
+    'classNames'?: string;
+  }
+  interface FlipDiv extends JSXBase.HTMLAttributes<HTMLFlipDivElement> {
+    'height'?: string;
+    'onClicked'?: (event: CustomEvent<any>) => void;
+    'width'?: string;
+  }
+
+  interface IntrinsicElements {
+    'card-item': CardItem;
+    'flip-div': FlipDiv;
+  }
+}
+
+export { LocalJSX as JSX };
+
+
+declare module "@stencil/core" {
+  export namespace JSX {
+    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+  }
+}
+
+

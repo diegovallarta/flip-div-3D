@@ -1,4 +1,3 @@
-import '../../stencil.core';
 import { EventEmitter } from '../../stencil.core';
 export declare class FlipCard {
     height: string;
@@ -7,5 +6,5 @@ export declare class FlipCard {
     clicked: EventEmitter;
     componentWillLoad(): void;
     clickHandle(e: any): void;
-    render(): JSX.Element;
+    render(): any;
 }
